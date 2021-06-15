@@ -1,5 +1,83 @@
-$color:blue;
+@import "config";
+@import "utilities";
+
+@font-face {
+  font-family: Dosis;
+  src: url(/dist/fonts/Dosis-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  background-color: $color;
+  font-family: "Dosis", sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-color;
+}
+
+ul {
+  list-style: none;
+}
+
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
+}
+
+#header {
+  &-home {
+    background: $bg-img no-repeat center right/ cover;
+    height: 100vh;
+    color: white;
+  }
+}
+
+#logo {
+  height: 70px;
+  width: 70px;
+  text-transform: uppercase;
+}
+
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    padding: 1rem 1.5rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.5s;
+
+    &:hover {
+      border-color: $medium-color;
+    }
+
+    &.current {
+      border-color: $main-color;
+    }
+  }
 }
