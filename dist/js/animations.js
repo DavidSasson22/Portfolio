@@ -10,11 +10,11 @@ const myprojects = 27;
 document.addEventListener("scroll", () => {
   if (window.pageYOffset > 160) {
     homeA.style.left = `0px`;
-  } else homeA.style.left = `90%`;
+  } else homeA.style.left = `75%`;
 });
 
 document.addEventListener("scroll", () => {
-  if (window.pageYOffset > 600) {
+  if (window.pageYOffset > 600 && window.pageYOffset < 605) {
     if (certificateNum.textContent < myCert) {
       for (let i = 0; i <= myCert; i++) {
         setTimeout(() => {

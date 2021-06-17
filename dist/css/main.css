@@ -13,7 +13,7 @@
 
 .btn-main {
   color: #333;
-  background-color: #ffbc00; }
+  background-color: #c09285; }
 
 .btn-light {
   color: #333;
@@ -26,7 +26,7 @@
 button[class^="btn-"]:hover,
 a[class^="btn-"]:hover,
 input[class^="btn-"]:hover {
-  background-color: #ffbc00; }
+  background-color: #c09285; }
 
 .lead {
   font-size: 1.3rem;
@@ -62,7 +62,7 @@ input[class^="btn-"]:hover {
 .bottom-line {
   height: 2px;
   width: 3rem;
-  background: #ffbc00;
+  background: #c09285;
   display: block;
   margin: 0 auto 1rem auto; }
 
@@ -131,7 +131,7 @@ img {
     #main-nav a:hover {
       border-color: #ccc; }
     #main-nav a.current {
-      border-color: #ffbc00; }
+      border-color: #c09285; }
 
 #home-a {
   background-color: #f5efe1;
@@ -179,7 +179,7 @@ img {
       right: 0;
       font-size: 20px;
       background-color: #333;
-      color: #fff;
+      color: #000;
       border-radius: 50%;
       height: 30px;
       width: 30px;
@@ -232,5 +232,5 @@ img {
       padding-top: 3px;
       color: white; }
       #main-footer .footer-content .social .fab:hover {
-        background: #ffbc00;
+        background: #c09285;
         color: #333; }
