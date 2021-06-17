@@ -19,7 +19,7 @@ document.addEventListener("scroll", () => {
       for (let i = 0; i <= myCert; i++) {
         setTimeout(() => {
           certificateNum.textContent = i;
-        }, 100 * i);
+        }, 150 * i);
       }
     }
     if (hoursNum.textContent < myHours) {
@@ -30,14 +30,14 @@ document.addEventListener("scroll", () => {
           } else {
             hoursNum.textContent = "1000+";
           }
-        }, 1 * i);
+        }, 1.5 * i);
       }
     }
     if (projectsNum.textContent < myprojects) {
       for (let i = 0; i <= myprojects; i++) {
         setTimeout(() => {
           projectsNum.textContent = i;
-        }, 50 * i);
+        }, 75 * i);
       }
     }
   }

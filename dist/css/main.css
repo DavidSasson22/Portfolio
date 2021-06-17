@@ -59,6 +59,13 @@ input[class^="btn-"]:hover {
 .my-4 {
   margin: 4rem 0; }
 
+.bottom-line {
+  height: 2px;
+  width: 3rem;
+  background: #ffbc00;
+  display: block;
+  margin: 0 auto 1rem auto; }
+
 @font-face {
   font-family: Dosis;
   src: url(/dist/fonts/Dosis-VariableFont_wght.ttf); }
@@ -154,3 +161,43 @@ img {
       background: #f4f4f4; }
     #home-b .stats div:nth-child(even) {
       background: #ccc; }
+
+#home-c {
+  background-color: #faedcb; }
+  #home-c .process {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 1.5rem;
+    text-align: center; }
+    #home-c .process-step {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 20px;
+      background-color: #b44a3d;
+      color: #fff;
+      border-radius: 50%;
+      height: 30px;
+      width: 30px;
+      line-height: 15px;
+      padding-top: 8px;
+      transition: all 1s; }
+    #home-c .process-icon {
+      border-radius: 50%;
+      background: #5885b5;
+      color: #fff;
+      padding-top: 20%;
+      width: 110px;
+      height: 110px;
+      line-height: 70px;
+      text-align: center;
+      position: relative;
+      transition: all 0.75s; }
+      #home-c .process-icon:hover {
+        background: #b44a3d;
+        width: 120px;
+        height: 120px;
+        line-height: 90px; }
+        #home-c .process-icon:hover .process-step {
+          background-color: #5885b5;
+          color: #fff; }

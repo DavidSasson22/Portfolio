@@ -4,4 +4,21 @@ $main-color: #ffbc00;
 $light-color: #f4f4f4;
 $dark-color: #333;
 $medium-color: #ccc;
+$light-green: #c9e4de;
+$medium-green: #b4d9c6;
+$light-blue: #c6def1;
+$light-brown: #faedcb;
+$medium-brown: #b44a3d;
+$medium-blue: #5885b5;
+$gentle-brown: #967579;
+
 $bg-img: url("../img/background5.jpg");
+
+// Set Text Color
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
