@@ -15,7 +15,6 @@
 body {
   font-family: "Dosis", sans-serif;
   line-height: 1.6;
-  background-color: #fff;
   overflow-x: hidden;
 }
 
@@ -39,6 +38,7 @@ img {
 
 #header {
   &-home {
+    margin-bottom: 1rem;
     background: $bg-img no-repeat center right/ cover;
     height: 100vh;
     color: white;
@@ -96,6 +96,7 @@ img {
 // HOME
 #home {
   &-a {
+    background-color: $light-brown;
     position: relative;
     transition: ease-in-out 1s;
     .specials {
@@ -104,7 +105,7 @@ img {
       grid-gap: 1rem;
       grid-template-columns: repeat(4, 1fr);
       .fas {
-        color: $main-color;
+        color: $medium-blue;
         padding-bottom: 0.4rem;
       }
     }
@@ -130,19 +131,22 @@ img {
 
       div {
         padding: 3rem 0;
+        color: $strong-green;
 
         &:nth-child(odd) {
           background: $light-color;
         }
 
         &:nth-child(even) {
-          background: $medium-color;
+          background: $medium-green;
         }
       }
     }
   }
   &-c {
     background-color: $light-brown;
+    margin-bottom: 1rem;
+    height: 330px;
     .process {
       display: grid;
       grid-template-columns: repeat(8, 1fr);
@@ -155,10 +159,8 @@ img {
         top: 0;
         right: 0;
         font-size: 20px;
-        // background: $main-color;
         background-color: $medium-brown;
         color: set-text-color($main-color);
-        // color: $medium-green;
         border-radius: 50%;
         height: 30px;
         width: 30px;
@@ -171,8 +173,7 @@ img {
       &-icon {
         border-radius: 50%;
         background: $medium-blue;
-        color: set-text-color($dark-color);
-        // color: $medium-green;
+        color: white;
         padding-top: 20%;
         width: 110px;
         height: 110px;
@@ -180,6 +181,7 @@ img {
         text-align: center;
         position: relative;
         transition: all 0.75s;
+        margin-bottom: 1rem;
 
         &:hover {
           background: $medium-brown;
@@ -188,11 +190,45 @@ img {
           line-height: 90px;
 
           .process-step {
-            // background: $dark-color;
             background-color: $medium-blue;
-            color: set-text-color($dark-color);
+            color: white;
           }
         }
+      }
+    }
+  }
+}
+
+/*
+      ======
+      footer
+      ======
+*/
+
+#main-footer {
+  background: $dark-color;
+  color: #fff;
+  height: 5rem;
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center;
+    .social .fab {
+      margin-right: 0;
+      border: 2px #fff solid;
+      border-radius: 50%;
+      height: 30px;
+      width: 30px;
+      line-height: 20px;
+      text-align: center;
+      padding-top: 3px;
+      color: white;
+
+      &:hover {
+        background: $main-color;
+        color: $dark-color;
       }
     }
   }
