@@ -10,7 +10,7 @@ const myprojects = 27;
 document.addEventListener("scroll", () => {
   if (window.pageYOffset > 160) {
     homeA.style.left = `0px`;
-  } else homeA.style.left = `75%`;
+  } else homeA.style.left = `90%`;
 });
 
 document.addEventListener("scroll", () => {
