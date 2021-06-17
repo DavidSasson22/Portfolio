@@ -170,7 +170,7 @@ img {
   height: 330px; }
   #home-c .process {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(9, 1fr);
     grid-gap: 1.5rem;
     text-align: center; }
     #home-c .process-step {
