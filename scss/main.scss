@@ -159,7 +159,7 @@ img {
         top: 0;
         right: 0;
         font-size: 20px;
-        background-color: $medium-brown;
+        background-color: $dark-color;
         color: set-text-color($main-color);
         border-radius: 50%;
         height: 30px;
@@ -184,7 +184,7 @@ img {
         margin-bottom: 1rem;
 
         &:hover {
-          background: $medium-brown;
+          background: $dark-color;
           width: 120px;
           height: 120px;
           line-height: 90px;
