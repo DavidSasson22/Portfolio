@@ -14,7 +14,7 @@ document.addEventListener("scroll", () => {
 });
 
 document.addEventListener("scroll", () => {
-  if (window.pageYOffset > 600 && window.pageYOffset < 605) {
+  if (window.pageYOffset > 600 && window.pageYOffset < 650) {
     if (certificateNum.textContent < myCert) {
       for (let i = 0; i <= myCert; i++) {
         setTimeout(() => {

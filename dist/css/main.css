@@ -16,8 +16,11 @@
   background-color: #c09285; }
 
 .btn-light {
-  color: #333;
-  background-color: #f4f4f4; }
+  color: white;
+  background-color: #c0a69f;
+  border: 3px solid #a27879;
+  border-radius: 16px;
+  font-weight: 700; }
 
 .btn-dark {
   color: #f4f4f4;
@@ -28,7 +31,23 @@ a[class^="btn-"]:hover,
 input[class^="btn-"]:hover {
   background-color: #c09285; }
 
-.lead {
+.bg-main {
+  background: #c09285;
+  color: #000; }
+
+.bg-dark {
+  background: #333;
+  color: #fff; }
+
+.bg-light {
+  background: #f4f4f4;
+  color: #000; }
+
+.bg-medium {
+  background: #ccc;
+  color: #000; }
+
+s .lead {
   font-size: 1.3rem;
   margin-bottom: 2rem; }
 
@@ -99,6 +118,8 @@ img {
   background: url("../img/dsc_0581.jpg") no-repeat center right/cover;
   height: 100vh;
   color: white; }
+  #header-home h3 {
+    margin-top: 8px; }
   #header-home .header-content {
     text-align: center;
     padding-top: 20vh; }
@@ -107,6 +128,16 @@ img {
       line-height: 1.2; }
       #header-home .header-content h1 span {
         font-size: 2rem; }
+    #header-home .header-content .lead {
+      font-weight: 550; }
+
+#header-inner {
+  background: url("../img/dsc_0581.jpg") no-repeat 5% 28%/cover;
+  color: white;
+  height: 5.5rem;
+  border-bottom: 3px solid #c09285; }
+  #header-inner h3 {
+    margin-top: 8px; }
 
 #logo {
   height: 70px;
@@ -133,6 +164,11 @@ img {
     #main-nav a.current {
       border-color: #c09285; }
 
+/*
+              ====
+              HOME
+              ====
+*/
 #home-a {
   background-color: #f5efe1;
   position: relative;
@@ -206,6 +242,67 @@ img {
         #home-c .process-icon:hover .process-step {
           background-color: #5885b5;
           color: white; }
+
+/*
+              ====
+              About
+              ====
+*/
+#about-a .about-info {
+  display: grid;
+  grid-template-areas: "bioimage bio bio" "aw1 aw2 aw3";
+  grid-gap: 1.2rem; }
+
+#about-a .bio-image {
+  grid-area: bioimage; }
+
+#about-a .bio {
+  background: #f5efe1;
+  grid-area: bio;
+  border-left: 3px solid #b4d9c6;
+  padding: 0.8rem; }
+
+#about-a .award-1, #about-a .award-2, #about-a .award-3 {
+  padding: 1rem; }
+
+#about-a .award-1 {
+  background-color: #b4d9c6;
+  grid-area: aw1; }
+
+#about-a .award-2 {
+  background-color: #f4f4f4;
+  grid-area: aw2; }
+
+#about-a .award-3 {
+  background-color: #b4d9c6;
+  grid-area: aw3; }
+  #about-a .award-3 a {
+    text-decoration: underline; }
+
+#about-a .award-1 .fas,
+#about-a .award-2 .fas,
+#about-a .award-3 .fas {
+  color: #5885b5;
+  margin: 1rem; }
+
+#about-b .progress {
+  overflow: hidden;
+  height: 20px;
+  background: #ccc;
+  border-radius: 5px;
+  margin-bottom: 0.6rem; }
+  #about-b .progress div {
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    background: #c09285; }
+
+#about-c .about-logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem; }
+  #about-c .about-logos img {
+    width: 70%; }
 
 /*
       ======

@@ -42,6 +42,9 @@ img {
     background: $bg-img no-repeat center right/ cover;
     height: 100vh;
     color: white;
+    h3 {
+      margin-top: 8px;
+    }
     .header-content {
       text-align: center;
       padding-top: 20vh;
@@ -52,6 +55,19 @@ img {
           font-size: 2rem;
         }
       }
+      .lead {
+        font-weight: 550;
+      }
+    }
+  }
+  //Header-content
+  &-inner {
+    background: $bg-img no-repeat 5% 28% / cover;
+    color: white;
+    height: 5.5rem;
+    border-bottom: 3px solid $main-color;
+    h3 {
+      margin-top: 8px;
     }
   }
 }
@@ -92,8 +108,11 @@ img {
     }
   }
 }
-
-// HOME
+/*
+              ====
+              HOME
+              ====
+*/
 #home {
   &-a {
     background-color: $light-brown;
@@ -185,7 +204,6 @@ img {
 
         &:hover {
           background: $dark-color;
-          // background: $main-color;
           width: 120px;
           height: 120px;
           line-height: 90px;
@@ -199,6 +217,100 @@ img {
     }
   }
 }
+
+/*
+              ====
+              About
+              ====
+*/
+#about {
+  // About A
+  &-a {
+    .about-info {
+      display: grid;
+      grid-template-areas:
+        "bioimage bio bio"
+        "aw1 aw2 aw3";
+      grid-gap: 1.2rem;
+    }
+
+    // Grid Area
+    .bio-image {
+      grid-area: bioimage;
+    }
+
+    .bio {
+      background: $light-brown;
+      grid-area: bio;
+      border-left: 3px solid $medium-green;
+      padding: 0.8rem;
+    }
+    .award {
+      &-1,
+      &-2,
+      &-3 {
+        padding: 1rem;
+      }
+    }
+
+    .award-1 {
+      background-color: $medium-green;
+      grid-area: aw1;
+    }
+
+    .award-2 {
+      background-color: $light-color;
+      grid-area: aw2;
+    }
+
+    .award-3 {
+      background-color: $medium-green;
+      grid-area: aw3;
+      a {
+        text-decoration: underline;
+      }
+    }
+
+    .award-1 .fas,
+    .award-2 .fas,
+    .award-3 .fas {
+      color: $medium-blue;
+      margin: 1rem;
+    }
+  }
+  // About B
+  &-b {
+    .progress {
+      overflow: hidden;
+      height: 20px;
+      background: $medium-color;
+      border-radius: 5px;
+      margin-bottom: 0.6rem;
+
+      div {
+        height: 100%;
+        color: #fff;
+        text-align: center;
+        background: $main-color;
+      }
+    }
+  }
+  // About C
+  &-c {
+    .about-logos {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 2rem;
+
+      img {
+        width: 70%;
+      }
+    }
+  }
+}
+
+// #header-inner {
+// }
 
 /*
       ======
