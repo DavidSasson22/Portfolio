@@ -7,6 +7,8 @@ const myCert = 10;
 const myHours = 1000;
 const myprojects = 27;
 
+let active = true;
+
 document.addEventListener("scroll", () => {
   if (window.pageYOffset > 160) {
     homeA.style.left = `0px`;
@@ -15,14 +17,13 @@ document.addEventListener("scroll", () => {
 
 document.addEventListener("scroll", () => {
   if (window.pageYOffset > 600 && window.pageYOffset < 650) {
-    if (certificateNum.textContent < myCert) {
+    if (active) {
+      active = false;
       for (let i = 0; i <= myCert; i++) {
         setTimeout(() => {
           certificateNum.textContent = i;
         }, 150 * i);
       }
-    }
-    if (hoursNum.textContent < myHours) {
       for (let i = 0; i <= myHours; i += 10) {
         setTimeout(() => {
           if (i !== 1000) {
@@ -32,8 +33,6 @@ document.addEventListener("scroll", () => {
           }
         }, 1.5 * i);
       }
-    }
-    if (projectsNum.textContent < myprojects) {
       for (let i = 0; i <= myprojects; i++) {
         setTimeout(() => {
           projectsNum.textContent = i;

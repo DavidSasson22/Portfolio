@@ -280,7 +280,13 @@ img {
   }
   // About B
   &-b {
+    background-color: $light-brown;
+    color: black;
+    h2 {
+      text-align: center;
+    }
     .progress {
+      transition: 1s ease-in-out;
       overflow: hidden;
       height: 20px;
       background: $medium-color;
@@ -291,7 +297,7 @@ img {
         height: 100%;
         color: #fff;
         text-align: center;
-        background: $main-color;
+        background: $medium-blue;
       }
     }
   }

@@ -285,17 +285,23 @@ img {
   color: #5885b5;
   margin: 1rem; }
 
-#about-b .progress {
-  overflow: hidden;
-  height: 20px;
-  background: #ccc;
-  border-radius: 5px;
-  margin-bottom: 0.6rem; }
-  #about-b .progress div {
-    height: 100%;
-    color: #fff;
-    text-align: center;
-    background: #c09285; }
+#about-b {
+  background-color: #f5efe1;
+  color: black; }
+  #about-b h2 {
+    text-align: center; }
+  #about-b .progress {
+    transition: 1s ease-in-out;
+    overflow: hidden;
+    height: 20px;
+    background: #ccc;
+    border-radius: 5px;
+    margin-bottom: 0.6rem; }
+    #about-b .progress div {
+      height: 100%;
+      color: #fff;
+      text-align: center;
+      background: #5885b5; }
 
 #about-c .about-logos {
   display: grid;
