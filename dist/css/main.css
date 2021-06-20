@@ -1,3 +1,27 @@
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg); }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg); }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg); }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg); }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg); }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg); }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg); }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg); }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg); }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg); }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg); } }
+
 .container {
   max-width: 1280px;
   padding: 0 1.5rem;
@@ -291,24 +315,39 @@ img {
   #about-b h2 {
     text-align: center; }
   #about-b .progress {
-    transition: 1s ease-in-out;
     overflow: hidden;
     height: 20px;
     background: #ccc;
     border-radius: 5px;
     margin-bottom: 0.6rem; }
+    #about-b .progress .skills {
+      transition: 3s all ease-in-out; }
     #about-b .progress div {
       height: 100%;
       color: #fff;
       text-align: center;
       background: #5885b5; }
 
-#about-c .about-logos {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 2rem; }
-  #about-c .about-logos img {
-    width: 70%; }
+#about-c {
+  background-color: #c6def1; }
+  #about-c .about-logos {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-gap: 1rem; }
+    #about-c .about-logos .imgContainer {
+      width: 7rem;
+      height: 7rem;
+      background-color: white;
+      padding: 0.75rem;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #about-c .about-logos .imgContainer img {
+        width: 4rem;
+        height: 5rem; }
+        #about-c .about-logos .imgContainer img:hover {
+          animation: shake 1s; }
 
 /*
       ======

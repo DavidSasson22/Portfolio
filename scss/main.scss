@@ -286,12 +286,14 @@ img {
       text-align: center;
     }
     .progress {
-      transition: 1s ease-in-out;
       overflow: hidden;
       height: 20px;
       background: $medium-color;
       border-radius: 5px;
       margin-bottom: 0.6rem;
+      .skills {
+        transition: 3s all ease-in-out;
+      }
 
       div {
         height: 100%;
@@ -303,13 +305,27 @@ img {
   }
   // About C
   &-c {
+    background-color: $light-blue;
     .about-logos {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-gap: 2rem;
-
-      img {
-        width: 70%;
+      grid-template-columns: repeat(9, 1fr);
+      grid-gap: 1rem;
+      .imgContainer {
+        width: 7rem;
+        height: 7rem;
+        background-color: white;
+        padding: 0.75rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 4rem;
+          height: 5rem;
+          &:hover {
+            animation: shake 1s;
+          }
+        }
       }
     }
   }
