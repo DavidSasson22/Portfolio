@@ -1,5 +1,6 @@
 @import "config";
 @import "utilities";
+@import "media";
 
 @font-face {
   font-family: Dosis;
@@ -338,10 +339,10 @@ img {
 .items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0.5rem;
+  grid-gap: 0;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
-  height: 610px;
-  background-color: $medium-green;
+  height: 590px;
+  // background-color: $medium-green;
   padding: 1rem;
 }
 
@@ -364,17 +365,14 @@ img {
     transition: transform 3s cubic-bezier(0.2, 1, 0.3, 1);
   }
 
-  // Bring in main color overlay
   &:hover:after {
     transform: scale(2) translateX(0) translateY(0) rotate(-28deg);
   }
 
-  // Scale image on hover
   &:hover &-image {
     transform: scale(1.2);
   }
 
-  // Bring in text on hover
   &:hover &-text {
     opacity: 1;
     transform: translateY(0);
@@ -402,7 +400,6 @@ img {
     top: 0;
     left: 0;
     width: 100%;
-    // height: 100%;
     line-height: 0;
   }
 
@@ -445,6 +442,62 @@ img {
     font-size: 1.2rem;
     opacity: 0.7;
     margin: 0;
+  }
+}
+
+// Contact Page
+#contact {
+  &-a {
+    .text-fields {
+      display: grid;
+      grid-template-areas:
+        "name email"
+        "subject phone"
+        "message message";
+      grid-gap: 1.2rem;
+      margin-bottom: 1.2rem;
+
+      // Grid Areas
+      .name-input {
+        grid-area: name;
+      }
+      .subject-input {
+        grid-area: subject;
+      }
+      .email-input {
+        grid-area: email;
+      }
+      .phone-input {
+        grid-area: phone;
+      }
+      .message-input {
+        grid-area: message;
+        height: 100px;
+      }
+
+      .text-input {
+        padding: 0.5rem 1rem;
+      }
+    }
+
+    button[type="submit"] {
+      width: 50%;
+    }
+  }
+
+  &-b {
+    .contact-info {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      text-align: center;
+    }
+  }
+
+  &-c {
+    h1 {
+      text-align: center;
+      font-size: 4rem;
+    }
   }
 }
 
