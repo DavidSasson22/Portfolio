@@ -136,6 +136,8 @@ s .lead {
       justify-content: center; }
     #main-nav li {
       padding: 0.5rem !important; }
+    #main-nav .current {
+      border-color: #5885b5 !important; }
   #header-home {
     height: 10rem !important;
     border-bottom: 3px solid #c09285;
