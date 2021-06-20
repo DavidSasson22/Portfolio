@@ -1,3 +1,4 @@
+const aboutB = document.querySelector(`#about-b`);
 const c = document.querySelector(`#skillsC`);
 const python = document.querySelector(`#skillsPython`);
 const html = document.querySelector(`#skillsHtml`);
@@ -20,38 +21,42 @@ const linuxR = 70;
 
 let activate = true;
 
-document.addEventListener("scroll", () => {
-  if (window.pageYOffset > 450) {
-    console.log(activate);
-    if (activate) {
-      activate = false;
-      setTimeout(() => {
-        c.style.width = `${cR}%`;
-      }, 100);
-      setTimeout(() => {
-        python.style.width = `${pythonR}%`;
-      }, 300);
-      setTimeout(() => {
-        html.style.width = `${htmlR}%`;
-      }, 500);
-      setTimeout(() => {
-        sass.style.width = `${sassR}%`;
-      }, 700);
-      setTimeout(() => {
-        js.style.width = `${jsR}%`;
-      }, 900);
-      setTimeout(() => {
-        react.style.width = `${reactR}%`;
-      }, 1100);
-      setTimeout(() => {
-        nodeJs.style.width = `${nodeJsR}%`;
-      }, 1300);
-      setTimeout(() => {
-        mongo.style.width = `${mongoR}%`;
-      }, 1500);
-      setTimeout(() => {
-        linux.style.width = `${linuxR}%`;
-      }, 1700);
+const observer = new IntersectionObserver(
+  function (entries) {
+    if (entries[0].isIntersecting === true) {
+      if (activate) {
+        activate = false;
+        setTimeout(() => {
+          c.style.width = `${cR}%`;
+        }, 100);
+        setTimeout(() => {
+          python.style.width = `${pythonR}%`;
+        }, 300);
+        setTimeout(() => {
+          html.style.width = `${htmlR}%`;
+        }, 500);
+        setTimeout(() => {
+          sass.style.width = `${sassR}%`;
+        }, 700);
+        setTimeout(() => {
+          js.style.width = `${jsR}%`;
+        }, 900);
+        setTimeout(() => {
+          react.style.width = `${reactR}%`;
+        }, 1100);
+        setTimeout(() => {
+          nodeJs.style.width = `${nodeJsR}%`;
+        }, 1300);
+        setTimeout(() => {
+          mongo.style.width = `${mongoR}%`;
+        }, 1500);
+        setTimeout(() => {
+          linux.style.width = `${linuxR}%`;
+        }, 1700);
+      }
     }
-  }
-});
+  },
+  { threshold: [0.05] }
+);
+
+observer.observe(aboutB);
