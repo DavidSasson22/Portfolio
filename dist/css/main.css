@@ -281,7 +281,7 @@ img {
     #main-nav a:hover {
       border-color: #ccc; }
     #main-nav a.current {
-      border-color: #c09285; }
+      border-color: #a16656; }
 
 /*
               ====
@@ -550,10 +550,13 @@ img {
 #contact-a button[type="submit"] {
   width: 50%; }
 
-#contact-b .contact-info {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  text-align: center; }
+#contact-b {
+  background-color: #5885b5;
+  margin-bottom: 2rem; }
+  #contact-b .contact-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center; }
 
 #contact-c h1 {
   text-align: center;
