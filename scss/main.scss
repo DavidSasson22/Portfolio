@@ -306,6 +306,9 @@ img {
   // About C
   &-c {
     background-color: $light-blue;
+    margin: 2rem 0;
+    height: 150px;
+    padding-top: 1.25rem;
     .about-logos {
       display: grid;
       grid-template-columns: repeat(9, 1fr);

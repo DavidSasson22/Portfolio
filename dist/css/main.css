@@ -329,7 +329,10 @@ img {
       background: #5885b5; }
 
 #about-c {
-  background-color: #c6def1; }
+  background-color: #c6def1;
+  margin: 2rem 0;
+  height: 150px;
+  padding-top: 1.25rem; }
   #about-c .about-logos {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
