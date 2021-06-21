@@ -16,7 +16,7 @@ const observerHome = new IntersectionObserver(
       homeA.style.left = `0px`;
     }
   },
-  { threshold: [0.05] }
+  { threshold: [0.2] }
 );
 
 const myNums = new IntersectionObserver(
@@ -46,7 +46,7 @@ const myNums = new IntersectionObserver(
       }
     }
   },
-  { threshold: [0.5] }
+  { threshold: [0.75] }
 );
 
 observerHome.observe(homeA);
