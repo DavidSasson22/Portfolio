@@ -19,5 +19,8 @@
   "homepage": "https://github.com/DavidSasson22/Portfolio#readme",
   "devDependencies": {
     "node-sass": "^6.0.0"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
   }
 }
