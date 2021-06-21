@@ -56,7 +56,7 @@ const observer = new IntersectionObserver(
       }
     }
   },
-  { threshold: [0.05] }
+  { threshold: [0.5] }
 );
 
 observer.observe(aboutB);
