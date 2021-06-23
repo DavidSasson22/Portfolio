@@ -1,6 +1,5 @@
 @import "config";
 @import "utilities";
-@import "media";
 
 @font-face {
   font-family: Dosis;
@@ -537,3 +536,5 @@ img {
     }
   }
 }
+
+@import "media";

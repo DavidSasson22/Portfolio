@@ -1,27 +1,27 @@
 // Tablets & Smaller
 @media (max-width: 800px) {
   #header-home {
-    height: 30rem !important;
+    height: 30rem;
 
     .header-content {
-      padding-top: 5rem !important;
+      padding-top: 5rem;
     }
   }
   #home-c {
-    height: auto !important;
+    height: auto;
     .process {
-      display: flex !important;
+      display: flex;
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
     }
   }
   .items {
-    grid-gap: 0.5rem !important;
-    height: auto !important;
+    grid-gap: 0.5rem;
+    height: auto;
   }
   .item {
-    height: 100px !important;
+    height: 100px;
   }
 }
 
@@ -37,16 +37,16 @@
     }
 
     li {
-      padding: 0.5rem !important;
+      padding: 0.5rem;
     }
     .current {
-      border-color: $medium-blue !important;
+      border-color: $medium-blue;
     }
   }
 
   #header {
     &-home {
-      height: 10rem !important;
+      height: 10rem;
       border-bottom: 3px solid $main-color;
       background-position: 20% 30%;
 
@@ -56,7 +56,7 @@
     }
 
     &-inner {
-      height: 10rem !important;
+      height: 10rem;
     }
   }
 
@@ -66,22 +66,22 @@
   #about-d .testimonials,
   #contact-b .contact-info,
   .items {
-    grid-template-columns: 1fr !important;
+    grid-template-columns: 1fr;
   }
 
   .items {
-    grid-gap: 1rem !important;
-    // height: 1000px !important;
+    grid-gap: 1rem;
+    // height: 1000px;
   }
 
   .item {
-    height: 130px !important;
+    height: 130px;
   }
 
   #home-c {
-    height: auto !important;
+    height: auto;
     .process {
-      display: flex !important;
+      display: flex;
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
@@ -124,12 +124,12 @@
           "bio"
           "aw1"
           "aw2"
-          "aw3" !important;
+          "aw3";
       }
     }
 
     &-c {
-      display: none !important;
+      display: none;
     }
   }
 
@@ -142,7 +142,7 @@
           "subject"
           "email"
           "phone"
-          "message" !important;
+          "message";
       }
     }
 
