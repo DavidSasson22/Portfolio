@@ -8,11 +8,19 @@ const aboutLink = document.querySelectorAll(`.aboutLink`);
 const workLink = document.querySelectorAll(`.workLink`);
 const contactLink = document.querySelectorAll(`.contactLink`);
 
+const viewMyW = document.querySelector(`#viewMyW`);
+
 const mySkills = [c, python, html, sass, js, react, nodeJs, mongo, linux];
 const myNumsB = [certificateNum, hoursNum, projectsNum];
 
 let currentDisplay = indexPage;
 currentDisplay.style.display = "block";
+
+viewMyW.addEventListener("click", () => {
+  currentDisplay.style.display = "none";
+  currentDisplay = workPage;
+  currentDisplay.style.display = "block";
+});
 
 homeLink.forEach((el) => {
   el.addEventListener("click", () => {

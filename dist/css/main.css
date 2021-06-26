@@ -52,6 +52,7 @@
 
 button[class^="btn-"]:hover,
 a[class^="btn-"]:hover,
+#viewMyW[class^="btn-"]:hover,
 input[class^="btn-"]:hover {
   background-color: #c09285; }
 

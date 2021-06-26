@@ -36,6 +36,7 @@
 
 button[class^="btn-"]:hover,
 a[class^="btn-"]:hover,
+#viewMyW[class^="btn-"]:hover,
 input[class^="btn-"]:hover {
   background-color: $main-color;
 }
@@ -58,9 +59,8 @@ input[class^="btn-"]:hover {
     background: $medium-color;
     color: set-text-color($medium-color);
   }
-}s
-
-.lead {
+}
+s .lead {
   font-size: 1.3rem;
   margin-bottom: 2rem;
 }
