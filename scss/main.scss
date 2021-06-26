@@ -18,6 +18,7 @@ body {
   overflow-x: hidden;
 }
 
+.inlink,
 a {
   text-decoration: none;
   color: $dark-color;
@@ -34,6 +35,13 @@ h4 {
 
 img {
   width: 100%;
+}
+
+#home-page,
+#about-page,
+#work-page,
+#contact-page {
+  display: none;
 }
 
 #header {
@@ -91,7 +99,7 @@ img {
     padding: 1rem 1.5rem;
   }
 
-  a {
+  span {
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
@@ -101,6 +109,7 @@ img {
 
     &:hover {
       border-color: $medium-color;
+      cursor: pointer;
     }
 
     &.current {
