@@ -112,7 +112,7 @@ s .lead {
 
 @font-face {
   font-family: Dosis;
-  src: url(/dist/fonts/Dosis-VariableFont_wght.ttf); }
+  src: url("/dist/fonts/Dosis-VariableFont_wght.ttf"); }
 
 * {
   margin: 0;
