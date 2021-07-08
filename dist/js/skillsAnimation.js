@@ -4,6 +4,7 @@ const python = document.querySelector(`#skillsPython`);
 const html = document.querySelector(`#skillsHtml`);
 const sass = document.querySelector(`#skillsSass`);
 const js = document.querySelector(`#skillsJs`);
+const ts = document.querySelector(`#skillsTs`);
 const react = document.querySelector(`#skillsReact`);
 const nodeJs = document.querySelector(`#skillsNode`);
 const mongo = document.querySelector(`#skillsMongo`);
@@ -14,6 +15,7 @@ const pythonR = 75;
 const htmlR = 85;
 const sassR = 85;
 const jsR = 95;
+const tsR = 85;
 const reactR = 92;
 const nodeJsR = 88;
 const mongoR = 80;
@@ -42,17 +44,20 @@ const observer = new IntersectionObserver(
           js.style.width = `${jsR}%`;
         }, 900);
         setTimeout(() => {
-          react.style.width = `${reactR}%`;
+          ts.style.width = `${tsR}%`;
         }, 1100);
         setTimeout(() => {
-          nodeJs.style.width = `${nodeJsR}%`;
+          react.style.width = `${reactR}%`;
         }, 1300);
         setTimeout(() => {
-          mongo.style.width = `${mongoR}%`;
+          nodeJs.style.width = `${nodeJsR}%`;
         }, 1500);
         setTimeout(() => {
-          linux.style.width = `${linuxR}%`;
+          mongo.style.width = `${mongoR}%`;
         }, 1700);
+        setTimeout(() => {
+          linux.style.width = `${linuxR}%`;
+        }, 1900);
       }
     }
   },
